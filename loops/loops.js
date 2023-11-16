@@ -72,7 +72,43 @@
 
       // there was missing code in the for loop conditionals. 
 
- 
+/* 8. Write a while loop that logs all odd natural numbers between 1 and 40. */
 
+      /*let num = 0;
 
+      while (num <= 40) {
+        if (num % 2 !== 0) {
+          console.log(num);
+        }
 
+        num ++;
+      } */
+
+/* 9. Loop over the elements of the array fish, logging each one. Terminate the loop immediately after logging the string 'Nemo'. */
+
+     /* let fish = ['Dory', 'Marlin', 'Gill', 'Nemo', 'Bruce'];
+
+      for (let i = 0; i < fish.length; i++){
+        console.log(fish[i]);
+        if(fish[i] === 'Nemo'){
+          break;
+      }
+      } */
+
+/* 10. What is the difference between the following two code snippets? Check the MDN documentation on while and do...while.
+
+        let counter = 0;
+
+        while (counter > 0) {
+          console.log('Woooot!');
+          counter -= 1;
+        }
+
+        let counter = 0;
+
+        do {
+          console.log('Woooot!');
+          counter -= 1;
+        } while (counter > 0); */
+
+        /* the first code snippet executes until a condition is met. the second one executes if a condition is met. */
