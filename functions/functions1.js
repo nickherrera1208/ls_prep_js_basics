@@ -68,6 +68,91 @@
 
       compareByLength('patience', 'perseverance'); // -1
       compareByLength('strength', 'dignity');      //  1
-      compareByLength('humor', 'grace');           //  0
+      compareByLength('humor', 'grace');           //  0 */
 
+      /*function compareByLength(string1, string2){
+        switch(true) {
+          case (string1.length < string2.length):
+            return -1;
+            break;
+          case (string2.length < string1.length):
+            return 1;
+            break;
+          default:
+            return 0;
+            break;
+          }
+        }
+      
+        console.log(compareByLength('patience', 'perseverance'));
+        console.log(compareByLength('strength', 'dignity'));
+        console.log(compareByLength('humor', 'grace')); */
 
+/* 7. Use JavaScript's string methods on the string 'Captain Ruby' to produce the string 'Captain JavaScript'.*/
+
+      /*let captain = 'Captain Ruby';
+      captain = captain.replace('Ruby', 'JavaScript');
+      console.log(captain);*/
+
+/* 8. Write a function that takes an ISO 639-1 language code and returns a greeting in that language. 
+      You can take the examples below or add whatever languages you like.
+
+      greet('en'); // 'Hi!'
+      greet('fr'); // 'Salut!'
+      greet('pt'); // 'Olá!'
+      greet('de'); // 'Hallo!'
+      greet('sv'); // 'Hej!'
+      greet('af'); // 'Haai!' */
+
+      /*function isoToGreeting(code){
+        switch(code){
+          case 'en':
+            return 'Hi!';
+          case 'fr':
+            return 'Salut!';
+          case 'pt':
+            return 'Ola!';
+          case 'de':
+            return 'Hallo!';
+          case 'sv':
+            return 'Hej!';
+          case 'af':
+            return 'Haai!';
+        }
+      }
+
+ console.log(isoToGreeting('de'));
+ // note that there is no need for a break statement when i use return. return will automatically exit the program. */
+
+ /* 9. Write a function that extracts the language code from a locale. 
+       A locale is a combination of a language code, a region, and usually also a character set, e.g en_US.UTF-8.
+
+        extractLanguage('en_US.UTF-8');  // 'en'
+        extractLanguage('en_GB.UTF-8');  // 'en'
+        extractLanguage('ko_KR.UTF-16'); // 'ko' */
+
+   /* function extractLanguage(code){
+      return code.slice(0,2);
+    }
+
+    console.log(extractLanguage('en_US.UTF-8'));
+    console.log(extractLanguage('en_GB.UTF-8'));
+    console.log(extractLanguage('ko_KR.UTF-16')); */
+
+/* 10. Similar to the previous exercise, now write a function that extracts the region code from a locale. For example:
+
+        extractRegion('en_US.UTF-8');  // 'US'
+        extractRegion('en_GB.UTF-8');  // 'GB'
+        extractRegion('ko_KR.UTF-16'); // 'KR' */
+
+        /*function extractRegion(code){
+          return code.split('_').join(',').split('.').join(',').split(',')[1];
+        }
+        console.log(extractRegion('en_US.UTF-8')); */
+
+        /* LS Version
+
+            function extractRegion(locale) {
+              return locale.split('.')[0]
+                  .split('_')[1];
+            } */
