@@ -90,11 +90,91 @@
         catAge(3); // 28
         catAge(4); // 32 */
 
-        /*function catAge(age) {
+         /*function catAge(age) {
           let sum = 0;
           let i = 0;
 
-          while () { 
-
+          while (i < 1) { 
+            sum += 15; 
+            i++;
           }
-        }*/
+          while (i < 2) {
+            sum += 9
+            i++;
+          }
+          sum += (age - 2) * 4;
+          return sum;
+        } 
+
+        console.log(catAge(2)); */
+
+        /* LS Answer 
+
+          function catAge(humanYears) {
+            switch(humanYears) {
+              case 0:
+                return 0;
+              case 1:
+                return 15;
+              case 2:
+                return 24;
+              default:
+                return 24 + (humanYears - 2) * 4;
+            }
+          } */
+
+/* 6. Create a function removeLastChar that takes a string as an argument, and returns the string without the last character.
+
+      removeLastChar('ciao!'); // 'ciao'
+      removeLastChar('hello'); // 'hell' */
+
+      /*function removeLastChar(string) {
+         return string.slice(0, string.length-1);
+      }
+
+      console.log(removeLastChar('word'));*/
+
+/* 7. Refactor the function below using arrow syntax. Line 9 should still log the same sentence.
+
+      const template = 'I VERB NOUN.';
+
+      function sentence(verb, noun) {
+        return template
+          .replace('VERB', verb)
+          .replace('NOUN', noun);
+      }
+
+      console.log(sentence('like', 'birds'));
+      // logs: I like birds. */
+
+      /*const template = 'I VERB NOUN.';
+
+      let sentence = (verb, noun) => template.replace('VERB', verb).replace('NOUN', noun);
+      
+      console.log(sentence('like', 'birds'));*/
+
+/* 8. The function initGame below returns an object. Refactor it using arrow function syntax.
+
+      let initGame = function () {
+        return {
+          level: 1,
+          score: 0
+        }
+      };
+
+      let game = initGame();
+
+      console.log('Level: ' + game.level);
+      console.log('Score: ' + game.score); */
+      
+      /* let initGame = () =>( {  
+        level: 1,
+        score: 0 
+      });
+
+      let game = initGame();
+      console.log('Level: ' + game.level);
+      console.log('Score: ' + game.score); */
+
+
+      
